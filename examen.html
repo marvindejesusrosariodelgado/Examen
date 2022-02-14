@@ -11,16 +11,50 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+
+            .menu {
+                list-style: none;
+                font-size: 16px;
+                font-family: Arial Black;
+                border-radius: 10px;
+                max-width: 1000px;
+                background: #D19317;
+                width: 100%;
+            }
+
+            .menu li a{
+                text-decoration: none;
+                color: #234EFA;
+                padding: 10px;
+                font-family: Arial Black;
+                font-size: 10px;
+                text-align: center;
+            }
+
+            .menu li {
+                display: inline-block;
+                text-align: center;
+            }
+
+            .menu li a:hover {
+                background: lavenderblush;
+            }
+
+            .boton {
+                font-family: Arial Black;
+                font-size: 10px;
+                background-color: #234e7a;
+                border-radius: 5px;
+
+            }
+
             .logo {
                 width: 500px;
                 height: 400px
                 ;
             }
-            .menu {
-                width: 100%;
-                height: 200px;
-            }
 
+            
 h3 { 
     font-size: 25px;
     color: blueviolet;
@@ -118,8 +152,8 @@ bottom: 12em;
 .border {
     border-color:whitesmoke;
     border-width: 10px;
-border-style: solid;
-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-style: solid;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
     .imgpiscina {
 width: 20em;
@@ -176,10 +210,37 @@ text-align: center;
     div {
         background-color: rgb(218, 230, 253);
     }
+    .contador {
+        position: relative;
+        top: -1em;
+        left: 2em;
+    }
         </style>
     </head>
     <body>
-     <img class="menu" src="examen.jpg">
+        <ul class="menu">
+            <li><a href="#">
+                <button type="submit" class="boton"> <font color="white">INSCRÍBETE</font> </button>
+            </a></li>
+            <li><a href="#">BIENVENIDA</a></li>
+            <li>|</li>
+            <li><a href="#">RIGC</a></li>
+            <li>|</li>
+            <li><a href="#">ODS</a></li>
+            <li>|</li>
+            <li><a href="#">CONFERENCISTAS</a></li>
+            <li>|</li>
+            <li><a href="#">AGENDA</a></li>
+            <li>|</li>
+            <li><a href="#">EXPERIENCIAS</a></li>
+            <li>|</li>
+            <li><a href="#">PREGUNTAS</a></li>
+            <li>|</li>
+            <li><a href="#">CONTACTO</a></li>
+            <li>|</li>
+        </ul>
+        <img class="contador" src="contador.jpg" alt="">
+
 
      <h2>RED INTERAMERICANA DE</h2>
      <h3>CONFERENCIA ANUAL</h3>
