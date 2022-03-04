@@ -1,14 +1,7 @@
 function devolverUnString(palabra) {
-    let num = /[bcdfghjklmnpqrstvwxyz]/i;
-    let vocales= /[aeiou]/i;
-    let copiaPalabra= palabra.split(num);
-    let = valorDeRetorno=[];
-    for (let i = 0; i < copiaPalabra.length; i++) {
-        if (copiaPalabra[i] == vocales) {
-            valorDeRetorno.push(palabra[i]);
-        }
-    }
-console.log(copiaPalabra);
+    let vocales= /[aeiou]/ig;
+    let valorDeRetorno=palabra.match(vocales);
+    console.log(valorDeRetorno);
     
 }
-devolverUnString("liza cayo");
+devolverUnString("Edmoun");
